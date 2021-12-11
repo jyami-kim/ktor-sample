@@ -1,11 +1,11 @@
-package com.jyami
+package com.jyami.route
 
 import io.ktor.http.*
 import kotlin.test.*
 import io.ktor.server.testing.*
 import com.jyami.plugins.*
 
-class ApplicationTest {
+class ConfigureRoutingKtTest {
     @Test
     fun testRoot() {
         withTestApplication({ configureRouting() }) {

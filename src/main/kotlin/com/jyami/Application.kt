@@ -8,13 +8,13 @@ import io.ktor.serialization.*
 import io.ktor.server.engine.*
 import io.ktor.server.netty.*
 
-fun main(){
-    embeddedServer(Netty, port=8080, host = "0.0.0.0"){
+fun main() {
+    embeddedServer(Netty, port = 9090, host = "0.0.0.0") {
         configureRouting()
         registerCustomerRoutes()
         registerOrderRoute()
-        install(ContentNegotiation){
+        install(ContentNegotiation) {
             json()
         }
-    }
+    }.start(wait = true)
 }
