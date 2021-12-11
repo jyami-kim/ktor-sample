@@ -13,9 +13,3 @@ fun Application.configureRouting() {
     }
 
 }
-
-fun Application.registerCustomerRoutes() {
-    routing {
-        customerRouting()
-    }
-}

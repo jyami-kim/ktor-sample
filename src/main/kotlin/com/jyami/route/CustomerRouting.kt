@@ -8,6 +8,12 @@ import io.ktor.request.*
 import io.ktor.response.*
 import io.ktor.routing.*
 
+fun Application.registerCustomerRoutes() {
+    routing {
+        customerRouting()
+    }
+}
+
 fun Route.customerRouting() {
     route("/customer") {
 
