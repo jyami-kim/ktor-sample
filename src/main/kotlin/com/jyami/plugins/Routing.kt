@@ -11,4 +11,11 @@ fun Application.configureRouting() {
             call.respondText("Hello World!")
         }
     }
+
+}
+
+fun Application.registerCustomerRoutes() {
+    routing {
+        customerRouting()
+    }
 }
