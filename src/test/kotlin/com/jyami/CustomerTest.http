@@ -1,0 +1,49 @@
+POST http://127.0.0.1:9090/customer
+Content-Type: application/json
+
+{
+  "id": "100",
+  "firstName": "jyami",
+  "lastName": "kim",
+  "email": "jyami@kakao.com"
+}
+
+
+###
+POST http://127.0.0.1:9090/customer
+Content-Type: application/json
+
+{
+  "id": "200",
+  "firstName": "minjeong",
+  "lastName": "kim",
+  "email": "minjeong@kakao.com"
+}
+
+###
+POST http://127.0.0.1:9090/customer
+Content-Type: application/json
+
+{
+  "id": "300",
+  "firstName": "mj",
+  "lastName": "k",
+  "email": "mj@kakao.com"
+}
+
+
+###
+GET http://127.0.0.1:9090/customer
+Accept: application/json
+
+###
+GET http://127.0.0.1:9090/customer/200
+
+###
+GET http://127.0.0.1:9090/customer/500
+
+###
+DELETE http://127.0.0.1:9090/customer/100
+
+###
+DELETE http://127.0.0.1:9090/customer/500
